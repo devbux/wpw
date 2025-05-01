@@ -47,9 +47,9 @@
         "workers": 10,
         "domainStrategy": "ForceIPv4v6",
         "reserved": [
-          242,
-          59,
-          64
+          0,
+          0,
+          0
         ],
         "peers": [
           {
@@ -105,8 +105,8 @@
       },
       {
         "type": "field",
-        "domain": ["myip.ms"],
-        "outboundTag": "warp"
+        "outboundTag": "warp",
+        "domain": ["myip.ms"]
       }
     ]
   },
