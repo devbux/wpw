@@ -108,8 +108,14 @@
       },
       {
         "type": "field",
+        "outboundTag": "direct",
+        "network": "udp",
+        "domain": ["engage.cloudflareclient.com"]
+      },
+      {
+        "type": "field",
         "outboundTag": "warp",
-        "network": "TCP"
+        "network": "tcp,udp"
       }
     ]
   },
