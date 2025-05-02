@@ -58,7 +58,7 @@
               "0.0.0.0/0",
               "::/0"
             ],
-            "endpoint": "engage.cloudflareclient.com:2408",
+            "endpoint": "162.159.192.1:2408",
             "keepAlive": 0
           }
         ],
@@ -72,26 +72,13 @@
       {
         "type": "field",
         "outboundTag": "direct",
-        "ip": [
-          "94.140.14.14",
-          "94.140.15.15"
-        ],
-        "port": 53,
-        "protocol": "udp"
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
         "domain": [
           "engage.cloudflareclient.com"
         ],
         "ip": [
-          "162.159.192.0/18",
-          "172.16.0.2/32",
-          "2606:4700:110:8e84:9bd6:db06:26ec:5fd2/128"
+          "162.159.192.0/18"
         ],
-        "port": 2408,
-        "protocol": "udp"
+        "port": 2408
       },
       {
         "type": "field",
