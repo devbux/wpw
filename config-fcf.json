@@ -74,6 +74,13 @@
     "rules": [
       {
         "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "engage.cloudflareclient.com"
+        ]
+      },
+      {
+        "type": "field",
         "outboundTag": "blocked",
         "ip": [
           "geoip:private"
@@ -109,7 +116,7 @@
       {
         "type": "field",
         "outboundTag": "warp",
-        "network": "tcp"
+        "network": "tcp,udp"
       }
     ]
   },
