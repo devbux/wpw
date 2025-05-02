@@ -71,17 +71,6 @@
     "rules": [
       {
         "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "engage.cloudflareclient.com"
-        ],
-        "ip": [
-          "162.159.192.0/18"
-        ],
-        "port": 2408
-      },
-      {
-        "type": "field",
         "outboundTag": "blocked",
         "ip": [
           "geoip:private"
