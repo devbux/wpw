@@ -106,7 +106,7 @@
       {
         "type": "field",
         "outboundTag": "warp",
-        "network": "TCP,UDP"
+        "network": "TCP"
       }
     ]
   },
