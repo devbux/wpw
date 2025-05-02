@@ -1,4 +1,7 @@
 {
+  "log": {
+    "loglevel": "none",
+  },
   "inbounds": [
     {
       "port": "${PORT}",
@@ -62,7 +65,7 @@
             "keepAlive": 0
           }
         ],
-        "noKernelTun": true
+        "noKernelTun": false
       }
     }
   ],
