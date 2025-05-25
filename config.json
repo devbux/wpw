@@ -36,37 +36,6 @@
       "tag": "blocked",
       "protocol": "blackhole",
       "settings": {}
-    },
-    {
-      "tag": "warp",
-      "protocol": "wireguard",
-      "settings": {
-        "mtu": 1420,
-        "secretKey": "${PRIVATE_KEY}",
-        "address": [
-          "172.16.0.2/32",
-          "2606:4700:110:8e84:9bd6:db06:26ec:5fd2/128"
-        ],
-        "workers": 10,
-        "domainStrategy": "ForceIPv4v6",
-        "reserved": [
-          0,
-          0,
-          0
-        ],
-        "peers": [
-          {
-            "publicKey": "${PUBLIC_KEY}",
-            "allowedIPs": [
-              "0.0.0.0/0",
-              "::/0"
-            ],
-            "endpoint": "162.159.192.1:2408",
-            "keepAlive": 0
-          }
-        ],
-        "noKernelTun": false
-      }
     }
   ],
   "routing": {
@@ -92,25 +61,18 @@
         "domain": [
           "geosite:category-ads-all",
           "geosite:category-porn",
-          "ext:geosite_IR.dat:category-ads-all",
-          "ext:geosite_IR.dat:malware",
-          "ext:geosite_IR.dat:phishing",
-          "ext:geosite_IR.dat:cryptominers"
+          "ext:geositeir.dat:category-ads-all",
+          "ext:geositeir.dat:malware",
+          "ext:geositeir.dat:phishing",
+          "ext:geositeir.dat:cryptominers"
         ]
       },
       {
         "type": "field",
         "outboundTag": "blocked",
         "ip": [
-          "ext:geoip_IR.dat:malware",
-          "ext:geoip_IR.dat:phishing"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "warp",
-        "domain": [
-          "myip.ms"
+          "ext:geoipir.dat:malware",
+          "ext:geoipir.dat:phishing"
         ]
       }
     ]
